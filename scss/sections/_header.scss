@@ -1,0 +1,379 @@
+/*===============================
+=            Top Bar            =
+===============================*/
+
+#top-bar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background:$color-gray;
+		#branding {
+			a {
+				display: block;
+					&:hover {
+						opacity: 0.7;
+					}
+					@include breakpoint(phone) {
+						margin:0px auto;
+						display: inline-block;
+					}
+			}
+			@include breakpoint(phone) {
+				text-align: center;
+			}
+		}
+		#login-area {
+			padding-top: 3px;
+			@include breakpoint(phone) {
+				padding-top: 10px;
+				text-align: center;
+			}
+			a {
+				display: inline-block;
+				background:url(/img/ico/user.png) no-repeat 90% center;
+				background-color:$color-gray-dark;
+				font-size: 14px;
+				text-transform: uppercase;
+				color:$color-white;
+				padding-left: 15px;
+				padding-right: 40px;
+				padding-top: 6px;
+				padding-bottom: 6px;
+				border-radius:6px;
+				font-family: $font-primary;
+					&:hover {
+						opacity: 0.8;
+					}
+			}
+		}
+		#language-area {
+			padding-top: 10px;
+			text-align: right;
+			@include breakpoint(phone) {
+			}
+			@include breakpoint(tablet-port) {
+				text-align: center;
+			}
+			a {
+				color:$color-white;
+			}
+				img {
+					@include breakpoint(phone) {
+					}
+				}
+				.dropdown-menu {
+					color:$color-gray;
+					background:$color-gray;
+					min-width: auto!important;
+					margin-left: 10px !important;
+					@include breakpoint(laptop) {
+						left:-50px;
+					}
+						a {
+							color:$color-gray;
+							background:$color-gray;
+								&:hover {
+									opacity: 0.8;
+									background:$color-gray-dark!important;
+								}
+						}
+						img {
+						}
+				}
+		}
+}
+
+/*=====  End of Top Bar  ======*/
+
+/*================================
+=            Menu Bar            =
+================================*/
+
+#menu-bar {
+	background:$color-gray-dark;
+	@include breakpoint(phone) {
+		text-align: center;
+	}
+		.dropdown {
+			display: inline-block;
+			color:$color-white;
+				a {
+					color:$color-white;
+				}
+		}
+
+				.dropdown-menu {
+					color:$color-gray;
+					background:$color-gray;
+					min-width: auto!important;
+					margin-left: 0px !important;
+					@include breakpoint(laptop) {
+						left:-50px;
+					}
+						a {
+							color:$color-gray;
+							background:$color-gray;
+								&:hover {
+									opacity: 0.8;
+									background:$color-gray-dark!important;
+								}
+						}
+						img {
+						}
+				}
+
+
+		.login-btn-mobile {
+			display: inline-block;
+			background:url(/img/ico/user.png) no-repeat 90% center;
+			background-color:$color-gray;
+			font-size: 14px;
+			text-transform: uppercase;
+			color:$color-white;
+			padding-left: 15px;
+			padding-right: 40px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			border-radius:6px;
+			font-family: $font-primary;
+			margin-right: 10px;
+			margin-top: 2px;
+			display: inline-block;
+				&:hover {
+					opacity: 0.8;
+				}
+		}
+		.navbar-nav {
+			li {
+				a {
+					font-size: 13px;
+					text-transform: uppercase;
+					font-family: $font-primary;
+					color:$color-white;
+					padding-top: 17px;
+					padding-bottom: 6px;
+					padding-left: 20px;
+					padding-right: 20px;
+					border-bottom:3px solid transparent;
+					margin-bottom: 7px;
+					@include breakpoint(phone) {
+						padding-top: 10px;
+						padding-bottom: 10px;
+						border-bottom:1px solid lighten($color-gray, 10%);
+						margin-bottom: 0px;
+					}
+					@include breakpoint(laptop) {
+						padding-left: 15px;
+						padding-right: 15px;
+					}
+					@include breakpoint(tablet-port) {
+						padding-left: 7px;
+						padding-right: 7px;
+						font-size: 12px;
+					}
+					&:hover {
+						border-bottom:3px solid $color-green;
+						@include breakpoint(phone) {
+							border-bottom:1px solid lighten($color-gray, 10%);
+						}
+					}
+				}
+			}
+		}
+		.navbar-header {
+			@include breakpoint(phone) {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+}
+
+		.navbar-toggle {
+			background:$color-white;
+			margin-left: 15px;
+			span {
+				color:$color-green;
+				background:$color-green;
+			}
+		}
+
+/*=====  End of Menu Bar  ======*/
+
+/*==================================
+=            Mas Header            =
+==================================*/
+
+#mas-header {
+	min-height:630px;
+	background:url(/img/bg/mas-header.jpg) no-repeat center top;
+	border-bottom:1px solid #1b1a1b;
+	background-size:cover;
+		header {
+			text-align: center;
+			color:$color-white;
+			padding-top: 150px;
+			@include breakpoint(phone) {
+				padding-top: 100px;
+			}
+				h1 {
+					font-size: 50px;
+					font-weight: bold;
+					font-family: $font-primary;
+					@include breakpoint(phone-port) {
+						font-size: 30px;
+					}
+					@include breakpoint(phone-land) {
+						font-size: 40px;
+					}
+					@include breakpoint(phone-big) {
+						font-size: 46px;
+					}
+					@include breakpoint(tablet-port) {
+						font-size: 46px;
+					}
+
+				}
+				h2 {
+					font-size: 74px;
+					font-weight: bold;
+					font-family: $font-primary;
+					@include breakpoint(phone-port) {
+						font-size: 54px;
+					}
+					@include breakpoint(phone-land) {
+						font-size: 60px;
+					}
+					@include breakpoint(phone-big) {
+						font-size: 64px;
+					}
+					@include breakpoint(tablet-port) {
+						font-size: 64px;
+					}
+				}
+				h3 {
+					color:$color-green;
+					font-size: 23px;
+					margin-top: 15px;
+					font-family: $font-narrow;
+					line-height: 24px;
+					@include breakpoint(phone-port) {
+						font-size: 18px;
+					}
+					@include breakpoint(phone-land) {
+						font-size: 20px;
+						line-height: 28px;
+					}
+					@include breakpoint(phone-big) {
+						font-size: 22px;
+						line-height: 30px;
+					}
+					@include breakpoint(tablet-port) {
+						font-size: 22px;
+						line-height: 30px;
+					}
+				}
+		}
+		#form-wrapper {
+			margin-top: 60px;
+		}
+}
+
+/*=====  End of Mas Header  ======*/
+
+/*=============================
+=            Logos            =
+=============================*/
+
+#logos-area {
+	background:$color-black;
+	padding-top: 30px;
+	padding-bottom: 30px!important;
+	text-align: center;
+		.owl-theme .owl-dots .owl-dot span {
+		background:$color-gray;
+	}
+	.owl-controls {
+		position:relative;
+		z-index: 999;
+		@include breakpoint(desktop) {
+			display: none;
+		}
+		@include breakpoint(laptop) {
+			display: none;
+		}
+			.active span {
+				background:$color-green!important;
+			}
+	}
+	img {
+		width: auto!important;
+		display: inline-block;
+	}
+
+}
+
+/*=====  End of Logos  ======*/
+
+/*============================
+=            Form            =
+============================*/
+
+#form-wrapper {
+	padding-bottom: 15px;
+	input[type="text"] {
+		width: 100%;
+		background:url(/img/ico/search.png) no-repeat 15px center;
+		background-color:$color-white;
+		border:none;
+		padding:20px;
+		border-radius:4px;
+		padding-left: 60px;
+		@include breakpoint(phone) {
+			margin-bottom: 10px;
+		}
+	}
+	input[type="submit"] {
+		width: 100%;
+		text-align: center;
+		background:$color-green;
+		color:$color-white;
+		font-weight: bold;
+		font-size: 24px;
+		font-family: $font-primary;
+		border-radius:4px;
+		border:none;
+		border-bottom:5px solid #79ab36;
+		height: 58px;
+		line-height: 58px;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	select {
+		border:none;
+	   background: $color-white;;
+	   padding:18px;
+	   font-size: 16px;
+	   height: 58px;
+	   -webkit-appearance: none;
+	   -moz-appearance: none;
+	   appearance: none;
+	    background: url(/img/ico/arrowgreen.png) 93% / 15% no-repeat #fff;
+	    border-radius:4px;
+	    width: 100%;
+	    color:$color-black;
+	    @include breakpoint(phone) {
+	    	margin-bottom: 10px;
+	    }
+	}
+	/*target Internet Explorer 9 and Internet Explorer 10:*/
+	@media screen and (min-width:0\0) {
+	    select {
+	        background:none;
+	        padding: 5px;
+	    }
+	}
+
+
+}
+
+/*=====  End of Form  ======*/

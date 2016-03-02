@@ -1,0 +1,74 @@
+/*=============================
+=            Reset            =
+=============================*/
+
+p {
+	padding: 0px;
+	margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	@include transition(all 0.3s ease-in-out);	
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style:none;
+}
+
+.remove-pad {
+	padding: 0px!important;
+}
+
+.no-bg {
+	background:none!important;
+}
+
+#navbar {
+	padding: 0px;
+	border:none;
+	background:none!important
+}
+
+.navbar-default {
+	border:none;
+	margin-bottom: 0px !important;
+	background:none!important;
+	background-color:none!important;
+}
+
+/*-----  End of Reset  ------*/
+
+/*=====================================
+=            Global Styles            =
+=====================================*/
+
+body {
+	font-family:$font-primary;
+	font-size: $base-font-size;
+	line-height:$base-line-height;
+}
+
+
+
+/*-----  End of Global Styles  ------*/
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+	@include breakpoint(desktop) {
+		display:block;
+	}
+	@include breakpoint(laptop) {
+		display:block;
+	}
+}
+

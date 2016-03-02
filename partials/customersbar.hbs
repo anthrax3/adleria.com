@@ -1,0 +1,42 @@
+<div class="container-fluid" id="logos-area">
+  <div class="container">
+    <div class="row">
+
+      <div class="owl-carousel" id="logos-slider">
+        {{#each customerbar.logos}}
+          <div class="item">
+            <img src="img/logos/{{this}}" alt="" class="img-responsive">
+          </div>
+        {{/each}}
+     </div>
+
+      <!--
+      <div class="owl-carousel owl-theme owl-loaded" id="logos-slider">
+
+        <div class="owl-stage-outer">
+          <div class="owl-stage" style="transform: translate3d(-1170px, 0px, 0px); transition: 0s; width: 3510px;">
+
+            {{#each customerbar.logos}}
+              <div class="owl-item cloned" style="width: 195px; margin-right: 0px;">
+                <div class="item">
+                  <img src="img/logos/{{this}}" alt="" class="img-responsive">
+                </div>
+              </div>
+            {{/each}}
+
+          </div>
+      </div>
+      <div class="owl-controls">
+        <div class="owl-nav">
+          <div class="owl-prev" style="display: none;">prev</div>
+          <div class="owl-next" style="display: none;">next</div>
+        </div>
+        <div class="owl-dots" style="">
+          <div class="owl-dot active"><span></span></div>
+        </div>
+      </div>
+    </div>
+    -->
+   </div>
+  </div>
+</div>

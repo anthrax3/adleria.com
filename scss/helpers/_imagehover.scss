@@ -1,0 +1,79 @@
+.project-box figure {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.project-box figure:before {
+    background-color: $color-black;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.86;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-transform: translateY(100%);
+       -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+         -o-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
+}
+.project-box figure:hover:before {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.project-box figure figcaption {
+	color: #fff;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+}
+
+.project-box img  {
+    width: 100%;
+}
+.project-box figure figcaption span {
+    display: inline-block;
+    font-family: 'Lato';
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 80px;
+    -webkit-transform: translateX(-400px);
+       -moz-transform: translateX(-400px);
+        -ms-transform: translateX(-400px);
+         -o-transform: translateX(-400px);
+            transform: translateX(-400px);
+    -webkit-transition: all .5s ease-out;
+       -moz-transition: all .5s ease-out;
+        -ms-transition: all .5s ease-out;
+         -o-transition: all .5s ease-out;
+            transition: all .5s ease-out;
+}
+.project-box figure:hover span {
+    -webkit-transform: translateX(0);
+       -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+         -o-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.project-box ul li figure a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

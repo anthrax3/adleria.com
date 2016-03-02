@@ -1,0 +1,23 @@
+@import "compass";
+
+@import "../assets/stylesheets/bootstrap.scss"; 
+
+@import "helpers/_breakpoints.scss"; 
+@import "helpers/_variables.scss"; 
+@import "helpers/_mixins.scss"; 
+@import "helpers/_fonts.scss"; 
+@import "helpers/_reset.scss"; 
+@import "helpers/_pulls.scss";
+@import "helpers/_animate.scss";
+@import "helpers/_slider.scss";
+@import "helpers/_hovers.scss";
+@import "helpers/_mainhover.scss";
+@import "helpers/_imagehover.scss";
+@import "helpers/_popup.scss";
+
+@import "sections/_header.scss"; 
+@import "sections/_footer.scss"; 
+@import "sections/_sidebar.scss"; 
+@import "sections/_content.scss"; 
+
+@import "pages/_home.scss"; 

@@ -1,0 +1,41 @@
+<div class="container-fluid" id="menu-bar">
+  <div class="container">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <a href="#" class="login-btn-mobile hidden-sm hidden-md hidden-lg">login</a>
+
+          <div class="dropdown hidden-lg hidden-md hidden-sm">
+            <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <img src="/img/ico/lang.png" alt="">
+              <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li>
+                <a href="#"><img src="/img/ico/es.png" alt=""> </a>
+              </li>
+              <li>
+                <a href="#"><img src="/img/ico/lang.png" alt=""> </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            {{#each menubar.options}}
+              <li><a href="{{this.url}}">{{this.title}}</a></li>
+            {{/each}}
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </nav>
+
+  </div>
+</div>

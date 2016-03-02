@@ -1,0 +1,54 @@
+@mixin breakpoint($value) {
+
+  @if $value == 'phone' {
+
+    @media only screen and (max-width : $screen-xs-max) { @content; }
+
+  } @else if $value == 'phone-port' {
+
+    @media only screen and (min-width : 240px) and (max-width : 360px) and (orientation : portrait) { @content; }
+
+  } @else if $value == 'phone-land' {
+
+    @media only screen and (min-width : 361px) and (max-width : 480px) and (orientation : portrait) { @content; }
+
+  } @else if $value == 'phone-big' {
+
+    @media only screen and (min-width : 481px) and (max-width : 680px) and (orientation : portrait) { @content; }   
+    
+  }  @else if $value == 'phone-iphone' {
+
+    @media only screen and (min-width : 481px) and (max-width : 680px) and (orientation : portrait) { @content; }
+
+
+ } @else if $value == 'phone-iphoneplus' {
+
+    @media only screen and (min-width : 410px) and (max-width : 420px) and (orientation : portrait) { @content; }    
+    
+
+
+  } @else if $value == 'tablet-port' {
+
+    @media only screen and (min-width : $screen-sm) and (max-width : $screen-md) and (orientation : portrait) { @content; }
+
+  } @else if $value == 'tablet-land' {
+
+    @media only screen and (min-width : $screen-sm) and (max-width : $screen-md) and (orientation : landscape) { @content; }
+
+  } @else if $value == 'tablet' {
+
+    @media only screen and (min-width : $screen-sm) and (max-width : $screen-md) { @content; }
+
+  } @else if $value == 'laptop' {
+
+    @media only screen and (min-width : $screen-md) and (max-width : $screen-md-max) { @content; }
+
+  } @else if $value == 'desktop' {
+
+    @media only screen and (min-width : $screen-lg) { @content; }
+
+  } @else {
+
+    @media only screen and (min-width : 240px) and (max-width : $value) { @content; }
+  }
+}

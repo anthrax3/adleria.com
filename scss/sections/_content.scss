@@ -1,0 +1,635 @@
+/*=================================
+=            News Page            =
+=================================*/
+
+.news-article-box {
+	border-bottom:1px solid #ebebeb;
+	padding-top: 25px;
+	padding-bottom: 25px;
+		img {
+			width: 100%;
+		}
+		h3 {
+			@include home-heading();
+			padding-top: 40px;
+			margin-bottom: 20px;
+			padding-bottom: 15px;
+			background: url(/img/bg/divider.jpg) no-repeat left bottom;
+		}
+		p {
+			@include regular-text();
+		}
+		a.learn-btn {
+			@include learn-btn();
+		}
+
+}
+
+#news-content {
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+.category-box {
+	background:$color-green;
+	padding:30px;
+	text-align: center;
+	border-radius:6px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+		header {
+			padding-bottom: 25px;
+			h5 {
+				font-size: 24px;
+				font-weight: bold;
+				color:$color-white;
+				font-family: $font-primary;
+				border-bottom:1px solid #aad372;
+				padding-bottom: 12px;
+			}
+		}
+		ul {
+			text-align: left;
+			li {
+				a {
+					display: block;
+					font-size: 14px;
+					font-family: $font-text;
+					color:$color-white;
+					padding-top: 8px;
+					padding-bottom: 8px;
+					background:url(/img/ico/small-arrow.png) no-repeat left center;
+					padding-left: 15px;
+						&:hover {
+							opacity: 0.8;
+							color:$color-white;
+						}
+				}
+			}
+		}
+}
+
+.search-box {
+	background:$color-gray;
+	padding:30px;
+	text-align: center;
+		header {
+			h5 {
+				font-size: 24px;
+				font-weight: bold;
+				color:$color-white;
+				font-family: $font-primary;
+				padding-bottom: 12px;
+			}
+		}
+		input[type="text"] {
+			border-radius:6px;
+			padding:10px;
+			width: 100%;
+			border:none;
+			font-size: 14px;
+		}
+		input[type="submit"] {
+			border:none;
+			@include learn-btn();
+			margin-top: 20px;
+		}
+}
+
+/*=====  End of News Page  ======*/
+
+/*================================
+=            FAq Page            =
+================================*/
+
+#faq-block {
+	padding-bottom: 50px;
+	header {
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-bottom: 40px;
+		border-bottom:1px solid #ebebeb;
+			h1 {
+				@include inner-heading();
+			}
+			h2 {
+				@include inner-headingbig();
+			}
+			h3 {
+				@include inner-headingsmall();
+				margin-top: 10px;
+			}
+	}
+	.faq-box {
+		border-bottom:1px solid #ebebeb;
+		padding-top: 50px;
+		padding-bottom: 50px;
+			h4 {
+				font-weight: bold;
+				color:#2c3339;
+				font-family: $font-primary;
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+			p {
+				@include regular-text();
+			}
+	}
+	#not-found-block {
+		text-align: center;
+		padding-top: 60px;
+			h6 {
+				font-weight: bold;
+				color:#111111;
+				font-family: $font-primary;
+				margin-bottom: 20px;
+				font-size: 24px;
+			}
+			a {
+				@include big-btn();
+			}
+	}
+}
+
+/*=====  End of FAq Page  ======*/
+
+/*====================================
+=            Contact page            =
+====================================*/
+
+#contact-block {
+	padding-bottom: 50px;
+	header {
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-bottom: 40px;
+		border-bottom:1px solid #ebebeb;
+		margin-bottom: 70px;
+			h1 {
+				@include inner-heading();
+			}
+			h2 {
+				@include inner-headingbig();
+			}
+			h3 {
+				@include inner-headingsmall();
+				margin-top: 10px;
+			}
+	}
+	label {
+		display: block;
+		font-size: 14px;
+		color:#ababab;
+		font-family: $font-text;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	input[type="text"] {
+		width: 100%;
+		padding:10px;
+		border:1px solid #ebebeb;
+		border-radius:6px;
+	}
+	textarea {
+		width: 100%;
+		padding:10px;
+		border:1px solid #ebebeb;
+		border-radius:6px;
+		height: 302px;
+	}
+	#submit-block {
+		text-align: right;
+			input[type="submit"] {
+				border:none;
+				@include learn-btn();
+			}
+	}
+}
+
+/*=====  End of Contact page  ======*/
+
+/*=================================
+=            Map Block            =
+=================================*/
+
+#map-block {
+	img {
+		width: 100%;
+	}
+}
+
+/*=====  End of Map Block  ======*/
+
+/*=====================================
+=            Contact Block            =
+=====================================*/
+
+#contact-info-block {
+	background:$color-green;
+	padding-top: 35px;
+	padding-bottom: 25px;
+		h6 {
+			font-weight: bold;
+			color:$color-white;
+			font-family: $font-text;
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+		p {
+			font-size: 14px;
+			color:$color-text;
+			font-family: $font-text;
+			line-height: 24px;
+			color:$color-white;
+			margin-bottom: 10px;
+				a {
+					color:$color-white;
+						&:hover {
+							text-decoration: underline;
+						}
+				}
+				img {
+					margin-right: 10px;
+				}
+		}
+		address {
+			color:$color-white;
+			font-size: 14px;
+			font-family: $font-text;
+			line-height: 24px;
+		}
+		.cta-logo {
+			margin-top: 40px;
+			@include breakpoint(phone) {
+				margin:0px auto;
+			}
+		}
+		.col-md-3 {
+			@include breakpoint(phone) {
+				text-align: center;
+				padding-bottom: 20px;
+			}
+		}
+}
+
+/*=====  End of Contact Block  ======*/
+
+/*==================================
+=            About Page            =
+==================================*/
+
+#about-page-image {
+	position:absolute;
+	right:0px;
+	min-height:auto;
+	top:0px;
+	@include breakpoint(tablet-port) {
+		position:relative;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	@include breakpoint(desktop) {
+		padding:0px;
+	}
+	img {
+		width: 100%;
+	}
+	@include breakpoint(phone) {
+		position:relative;
+		margin-top: 20px;
+	}
+	@include breakpoint(laptop) {
+		padding:0px;
+	}
+}
+
+#about-page-block {
+
+	background:$color-black;
+
+		img {
+
+		}
+		h2 {
+			@include home-heading();
+			padding-top: 90px;
+			margin-bottom: 20px;
+			padding-bottom: 15px;
+			background: url(/img/bg/divider.jpg) no-repeat left bottom;
+			color:$color-white;
+
+		}
+		p {
+			@include regular-text();
+			margin-right: 40px;
+			color:$color-white;
+			@include breakpoint(phone) {
+				margin-right: 0px;
+			}
+		}
+		.more-btn {
+			@include learn-btn();
+		}
+}
+
+
+/*=====  End of About Page  ======*/
+
+/*========================================
+=            About Main Block            =
+========================================*/
+
+#about-main-block {
+	padding-bottom: 50px;
+	header {
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-bottom: 40px;
+		border-bottom:1px solid #ebebeb;
+			h1 {
+				@include inner-heading();
+			}
+			h2 {
+				@include inner-headingbig();
+			}
+			h3 {
+				@include inner-headingsmall();
+				margin-top: 10px;
+			}
+	}
+	.about-article {
+		padding-top: 40px;
+		border-bottom:1px solid #ebebeb;
+		padding-bottom: 40px;
+		img {
+			width: 100%;
+			@include breakpoint(phone) {
+				margin-top: 20px;
+			}
+		}
+		h4 {
+			@include home-heading();
+			padding-top: 40px;
+			margin-bottom: 20px;
+			padding-bottom: 15px;
+			background: url(/img/bg/divider.jpg) no-repeat left bottom;
+			@include breakpoint(tablet-port) {
+				margin-top: 0px;
+				padding-top: 10px;
+			}
+		}
+		p {
+			@include regular-text();
+			margin-right: 40px;
+		}
+	}
+}
+
+/*=====  End of About Main Block  ======*/
+
+/*====================================
+=            Main Content            =
+====================================*/
+
+#main-content {
+	margin-top: 50px;
+	margin-bottom: 50px;
+		.main-article {
+			margin-top: 30px;
+			margin-bottom: 30px;
+				img {
+					width: 100%;
+				}
+				p {
+					@include regular-text();
+					margin-bottom: 20px;
+					margin-right: 40px;
+						strong {
+							color:$color-black;
+						}
+				}
+				h4 {
+					@include home-heading();
+					margin-bottom: 20px;
+					padding-bottom: 15px;
+					background: url(/img/bg/divider.jpg) no-repeat left bottom;
+				}
+		}
+		hr {
+			margin-top: 40px!important;
+			display: block;
+			opacity: 0.5;
+		}
+		h6 {
+			font-weight: bold;
+			font-size: 16px;
+			font-family: $font-text;
+				a {
+					color:$color-green;
+					text-decoration: underline;
+						&:hover {
+							text-decoration: none;
+						}
+				}
+		}
+}
+
+/*=====  End of Main Content  ======*/
+
+/*======================================
+=            Pricing Header            =
+======================================*/
+
+#pricing-header {
+	background:url(/img/bg/pricing-header.jpg) no-repeat center top;
+	background-size:cover;
+	min-height:528px;
+}
+
+#pricing-content {
+	margin-top: 30px;
+		p {
+			@include regular-text();
+				strong {
+					color:$color-black;
+				}
+		}
+		h4 {
+			@include home-heading();
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			margin-top: 20px;
+		}
+		hr {
+			opacity: 0.5;
+			margin-top: 50px;
+		}
+}
+
+.pricing-cta {
+	background:$color-gray;
+	text-align: center;
+	color:$color-white;
+	padding-top: 50px;
+	margin-top: 60px;
+		h5 {
+			font-size: 36px;
+			font-weight: bold;
+			color:$color-white;
+			font-family: $font-primary;
+			margin-bottom: 10px;
+			margin-top: 40px;
+		}
+		h6 {
+			font-size: 14px;
+			font-family: $font-text;
+		}
+		footer {
+			margin-top: 40px;
+			background:$color-gray-dark;
+			text-align: center;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		a {
+			@include big-btn();
+			background:url(/img/ico/big-arrow.png) no-repeat 95% center;
+			padding-right: 50px!important;
+			background-color:#8ac33e;
+			font-size: 16px;
+			padding-left: 30px;
+				&:hover {
+					color:$color-white;
+				}
+		}
+}
+
+/*=====  End of Pricing Header  ======*/
+
+/*================================
+=            Features            =
+================================*/
+
+#features-content {
+	padding-top: 50px;
+	padding-bottom: 60px;
+		h4 {
+			@include home-heading();
+			padding-top: 10px;
+			margin-bottom: 20px;
+			padding-bottom: 15px;
+			background: url(/img/bg/divider.jpg) no-repeat left bottom;
+		}
+		p {
+			@include regular-text();
+		}
+}
+
+#features-list {
+	background:#ebebeb;
+	padding-top: 60px;
+	padding-bottom: 60px;
+		header {
+			text-align: center;
+			padding-bottom: 60px;
+				h2 {
+					text-transform: uppercase;
+					font-weight: bold;
+					color:#222222;
+					font-family: $font-primary;
+					margin-bottom: 10px;
+					font-size: 36px;
+				}
+				h3 {
+					font-size: 16px;
+					color:#777777;
+					font-family: $font-text;
+				}
+		}
+		.feature-box {
+			background:$color-white;
+			padding-top: 60px;
+			padding-bottom: 60px;
+			border-left:1px solid #dfdfdf;
+			border-right:1px solid #dfdfdf;
+			border-bottom:2px solid #dfdfdf;
+			margin-bottom: 25px;
+			@include breakpoint(phone) {
+				text-align: center;
+			}
+				img {
+					@include breakpoint(phone) {
+						margin-bottom: 15px;
+					}
+				}
+				.feature-image {
+					text-align: center;
+				}
+				h5 {
+					font-size: 30px;
+					font-weight: bold;
+					text-transform: uppercase;
+					color:#333333;
+					font-family: $font-primary;
+					margin-bottom: 15px;
+				}
+				p {
+					@include regular-text();
+				}
+				.features-big-box {
+					img {
+						width: 100%;
+					}
+					hr {
+						margin-top: 50px;
+						margin-bottom: 50px;
+						opacity: 0.5;
+						@include breakpoint(phone) {
+							margin-top: 20px;
+							margin-bottom: 20px;
+						}
+					}
+					h6 {
+						font-weight: bold;
+						font-size: 18px;
+						color:#333333;
+						font-family: $font-primary;
+						margin-bottom: 15px;
+						margin-top: 60px;
+						@include breakpoint(tablet-port) {
+							margin-top: 20px;
+						}
+						@include breakpoint(phone) {
+							margin-top: 15px;
+						}
+					}
+					p {
+						@include regular-text();
+						@include breakpoint(phone) {
+							margin-bottom: 20px;
+						}
+					}
+				}
+		}
+}
+
+/*=====  End of Features  ======*/
+
+/*======================================
+=            Netowkr Owners            =
+======================================*/
+
+.network-owners-page {
+	h2 {
+		@include breakpoint(laptop) {
+			padding-top: 25px!important;
+		}
+	}
+}
+
+/*=====  End of Netowkr Owners  ======*/

@@ -1,0 +1,430 @@
+//@import "compass";
+
+@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "helpers/breakpoints";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/fonts";
+@import "helpers/reset";
+@import "helpers/pulls";
+@import "helpers/animate";
+@import "helpers/slider";
+//@import "helpers/hovers";
+@import "helpers/mainhover";
+@import "helpers/imagehover";
+@import "helpers/popup";
+
+@import "sections/header";
+@import "sections/footer";
+@import "sections/sidebar";
+@import "sections/content";
+
+
+/*===================================
+=            About Block            =
+===================================*/
+
+#about-image {
+
+}
+
+#about-block {
+	min-height:438px;
+	position: relative;
+	@include breakpoint(phone) {
+		padding-bottom: 30px;
+	}
+	@include breakpoint(laptop) {
+		min-height: auto;
+		padding-bottom: 20px;
+	}
+	@media screen and (min-width:1400px) and (max-width:1500px) {
+		min-height: 323px;
+	}
+	@media screen and (min-width:1600px) and (max-width:1700px) {
+		min-height: 377px;
+	}
+	@media screen and (min-width:1300px) and (max-width:1400px) {
+		min-height: 305px;
+	}
+	@media screen and (min-width:1200px) and (max-width:1300px) {
+		min-height: 285px;
+	}
+		img {
+
+		}
+		h2 {
+			@include home-heading();
+			padding-top: 90px;
+			margin-bottom: 20px;
+			padding-bottom: 15px;
+			background: url(img/bg/divider.jpg) no-repeat left bottom;
+			@include breakpoint(laptop) {
+				padding-top: 30px;
+			}
+			@media screen and (min-width:1200px) and (max-width:1500px) {
+				padding-top: 40px;
+			}
+			@include breakpoint(tablet-port) {
+				padding-top: 40px;
+			}
+			@include breakpoint(phone) {
+				padding-top: 40px;
+			}
+			@media screen and (min-width:1300px) and (max-width:1400px) {
+				padding-top: 20px;
+			}
+			@media screen and (min-width:1400px) and (max-width:1500px) {
+				padding-top: 30px;
+			}
+			@media screen and (min-width:1600px) and (max-width:1700px) {
+				padding-top: 40px;
+			}
+			@media screen and (min-width:1200px) and (max-width:1300px) {
+				padding-top: 20px;
+			}
+		}
+		p {
+			@include regular-text();
+			margin-right: 40px;
+			@include breakpoint(phone) {
+				margin-right: 0px;
+			}
+			@include breakpoint(laptop) {
+				margin-right: 10px;
+				line-height: 18px;
+			}
+		}
+		.more-btn {
+			@include learn-btn();
+			@media screen and (min-width:1200px) and (max-width:1300px) {
+				margin-top: 10px;
+			}
+		}
+}
+
+/*=====  End of About Block  ======*/
+
+/*======================================
+=            Featured Area             =
+======================================*/
+
+#featured-area {
+	background:#ebebeb;
+	padding-top: 60px;
+	padding-bottom: 50px;
+		header {
+			text-align: center;
+			padding-bottom: 30px;
+				h3 {
+					@include section-heading();
+				}
+				h4 {
+					@include small-heading();
+				}
+		}
+		.featured-box {
+			text-align: center;
+			background:$color-white;
+			border-bottom:2px solid #cfcfcf;
+			border-right:1px solid #dfdfdf;
+			padding-bottom: 40px;
+			padding-right: 35px;
+			padding-left: 35px;
+			margin-top: 80px;
+			@include breakpoint(tablet-port) {
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 10px;
+			}
+				img {
+					margin-top: -38px;
+					margin-bottom: 25px;
+				}
+				h5 {
+					text-transform: uppercase;
+					font-size: 18px;
+					font-weight: bold;
+					color: #333333;
+					@include breakpoint(laptop) {
+						font-size: 14px;
+					}
+				}
+				p {
+					font-size: 14px;
+					line-height: 20px;
+					font-family: $font-text;
+					color:$color-text-light;
+					margin-top: 22px;
+					min-height: 60px;
+					@include breakpoint(laptop) {
+						min-height: 90px;
+					}
+					@include breakpoint(tablet-port) {
+						min-height: 120px;
+					}
+				}
+		}
+		.all-features-btn {
+			@include big-btn();
+		}
+		footer {
+			text-align: center;
+			margin-top: 50px;
+		}
+}
+
+/*=====  End of Featured Area   ======*/
+
+/*===================================
+=            Operations           =
+===================================*/
+
+#operation-image {
+
+}
+
+#operation-block {
+	background:$color-black;
+		h2 {
+			@include home-heading();
+			padding-top: 90px;
+			margin-bottom: 20px;
+			padding-bottom: 15px;
+			background: url(img/bg/divider.jpg) no-repeat left bottom;
+			color:$color-white;
+		}
+		p {
+			@include regular-text();
+			margin-right: 40px;
+			color:$color-white;
+			@include breakpoint(phone) {
+				margin-right: 0px;
+			}
+		}
+		.more-btn {
+			@include learn-btn();
+		}
+}
+
+/*=====  End of About Block  ======*/
+
+/*==========================================
+=            Testimonials Block            =
+==========================================*/
+
+#test-block {
+	header {
+			text-align: center;
+			padding-bottom: 60px;
+				h4 {
+					@include section-heading();
+				}
+				h5 {
+					@include small-heading();
+				}
+	}
+
+
+	.owl-theme .owl-dots .owl-dot span {
+		background:$color-gray;
+	}
+	.owl-controls {
+		position:relative;
+		z-index: 999;
+		@include breakpoint(desktop) {
+			display: none;
+		}
+		@include breakpoint(laptop) {
+			display: none;
+		}
+			.active span {
+				background:$color-green!important;
+			}
+	}
+
+
+		padding-top: 60px;
+		padding-bottom: 50px;
+		.test-box {
+			border:1px solid #efefef;
+			border-radius:6px;
+			padding-top: 35px;
+			padding-bottom: 35px;
+			padding-right: 20px;
+			padding-left: 80px;
+			img {
+				width: auto!important;
+			}
+			background:url(../img/bg/quote.png) no-repeat 20px 35px;
+			@include breakpoint(phone) {
+			}
+			@include breakpoint(tablet-port) {
+				padding:15px;
+				background:none;
+			}
+			p {
+				font-size: 14px;
+				font-family: $font-text;
+				color:$color-text-light;
+				line-height: 24px;
+			}
+		}
+		footer {
+			padding-top: 40px;
+			background:url(../img/bg/bottom-quote.jpg) no-repeat 20px 0px;
+			margin-top: -2px;
+			margin-left: 25px;
+			@include breakpoint(phone) {
+				margin-bottom: 30px;
+			}
+				img {
+					border-radius:180px;
+					border:5px solid #f1f1f1;
+					margin-right: 10px;
+					float:left;
+				}
+				small {
+					font-size: 14px;
+					font-weight: bold;
+					font-family: $font-text;
+					margin-bottom: 2px;
+					display: inline-block;
+					padding-top: 10px;
+				}
+				h6 {
+					font-size: 14px;
+					font-family: $font-text;
+					color:$color-green;
+				}
+		}
+}
+
+#test-slider {
+	img {
+		width: auto!important;
+	}
+}
+
+/*=====  End of Testimonials Block  ======*/
+
+/*==================================
+=            News Block            =
+==================================*/
+
+#news-block {
+	background:#ebebeb;
+	padding-top: 60px;
+	padding-bottom: 50px;
+
+	.owl-theme .owl-dots .owl-dot span {
+		background:$color-gray;
+	}
+	.owl-controls {
+		position:relative;
+		z-index: 999;
+		@include breakpoint(desktop) {
+			display: none;
+		}
+		@include breakpoint(laptop) {
+			display: none;
+		}
+			.active span {
+				background:$color-green!important;
+			}
+	}
+
+	header {
+			text-align: center;
+			padding-bottom: 60px;
+				h4 {
+					@include section-heading();
+				}
+				h5 {
+					@include small-heading();
+				}
+	}
+	.news-box {
+		background:$color-white;
+		padding-bottom: 25px;
+		@include breakpoint(phone) {
+			margin-bottom: 20px;
+		}
+			img {
+				width: 100%;
+			}
+			h4 {
+				font-size: 18px;
+				font-weight: bold;
+				font-family: $font-primary;
+				color:#333;
+				margin-top: 15px;
+				margin-bottom: 15px;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			p {
+				@include regular-text();
+				line-height: 20px;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			a.more-btn {
+				@include learn-btn();
+				margin-left: 20px;
+			}
+	}
+}
+
+/*=====  End of News Block  ======*/
+
+
+/*New style for About-image*/
+body{overflow-x:hidden;}
+.over-image{
+	height: 100%;
+	position: relative;
+	width:50vw;
+}
+
+#about-image img {
+  height: 438px;
+  width:100%;
+  object-fit:cover;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px){
+  #about-image img{
+    height: 360px;
+    width:100%;
+    object-fit:cover;
+  }
+  #about-block{
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+  #about-image img{
+    height: 500px;
+    width:100%;
+    object-fit:cover;
+  }
+}
+@media screen and (max-width: 768px){
+  .over-image{height: 100%;position: relative;width:100%;padding-top:20px;}
+  #about-block{
+    padding-bottom: 0px;
+  }
+  #operation-block {
+  	padding-bottom: 0px;
+  }
+  #about-image img{
+    height: auto;
+    width:100%;
+  }
+}
+.new-pad{
+  padding-left: 0px;
+  padding-right: 0px;
+}

@@ -1,0 +1,170 @@
+@mixin home-heading($text-color: #2c3339) {
+	font-size: 24px;
+    font-weight: bold;
+    font-family: $font-primary;
+}
+
+@mixin section-heading($text-color: #222222) {
+    font-size: 24px;
+    color:#222222;
+    font-weight: bold;
+    font-family: $font-primary;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @include breakpoint(phone-port) {
+        font-size: 20px;
+    }
+}
+
+@mixin small-heading() {
+    color:#777777;
+    font-size: 16px;
+    font-family: $font-primary;
+    @include breakpoint(phone-port) {
+        font-size: 14px;
+    }
+}
+
+@mixin inner-heading() {
+    color:#222222;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    @include breakpoint(phone-port) {
+        font-size: 20px;
+    }
+}
+
+@mixin inner-headingbig() {
+    color:#8ac33e;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: $font-primary;
+    font-weight: bold;
+    @include breakpoint(phone-port) {
+        font-size: 30px;
+    }
+}
+
+@mixin inner-headingsmall() {
+    color:#777777;
+    font-size: 16px;
+    font-family: $font-text;
+}
+
+@mixin regular-text($text-size: 14px , $line-spacing: 24px) {
+	color:#aeadad;
+    font-size: 14px;
+    font-family: $font-text;
+    line-height: 24px;
+}
+
+@mixin learn-btn() {
+    background:url(/img/ico/arrow.png) no-repeat 90% center;
+    background-color:#8ac33e;
+    border-bottom:5px solid #79ab36;
+    border-radius:6px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $font-primary;
+    color:$color-white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    margin-top: 30px;
+    display: inline-block;
+    padding-right: 60px;
+    text-shadow: 1px 1px 1px #66902f;
+        &:hover {
+            color:$color-white!important;
+            opacity: 0.8;
+        }
+}
+
+@mixin big-btn() {
+    background:url(/img/ico/big-arrow.png) no-repeat 90% center;
+    background-color:#8ac33e;
+    border-bottom:5px solid #79ab36;
+    border-radius:6px;
+    color:$color-white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 40px;
+    display: inline-block;
+    padding-right: 80px;
+        &:hover {
+            opacity: 0.8;
+        }
+        @include breakpoint(phone-port) {
+            font-size: 16px;
+            padding-left: 35px;
+            padding-right: 70px;
+        }
+}
+
+@mixin learn-btn-orange($text-size: 14px) {
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size:$text-size;
+    font-family:$font-primary;
+    color:$color-white;
+    background:url(/img/bg/arrow.png) no-repeat 90% center;
+    background-color: #dc4405;
+    padding:15px 25px;
+    padding-right:80px!important;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+        &:hover {
+            color:$color-white!important;
+            background-color:$color-orange;
+        }
+        i {
+            margin-right: 15px;
+        }
+}
+
+
+
+.spacing {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
+@mixin centre($axis: "both"){
+    position:absolute;
+    @if $axis == "y"{
+        top:50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    @if $axis == "x"{
+        left:50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    @if $axis == "both"{
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}

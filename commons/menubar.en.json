@@ -1,0 +1,32 @@
+{
+  "options": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "About",
+      "url": "/about"
+    },
+    {
+      "title": "Features",
+      "url": "/features"
+    },
+    {
+      "title": "Pricing",
+      "url": "/pricing"
+    },
+    {
+      "title": "FAQ",
+      "url": "/faq"
+    },
+    {
+      "title": "News",
+      "url": "/news"
+    },
+    {
+      "title": "Contact",
+      "url": "/contact"
+    }
+  ]
+}

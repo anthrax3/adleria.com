@@ -1,0 +1,142 @@
+/*==============================
+=            Footer            =
+==============================*/
+
+#page-footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background:$color-gray;
+		.footer-box {
+			@include breakpoint(phone) {
+				text-align: center;
+				padding-bottom: 20px;
+			}
+			h6 {
+				color:$color-green;
+				font-size: 18px;
+				font-weight: bold;
+				text-transform: uppercase;
+				margin-bottom: 25px;
+				@include breakpoint(tablet-port) {
+					font-size: 14px;
+				}
+			}
+			ul {
+				li {
+					a {
+						display: block;
+						color:$color-white;
+						font-size: 14px;
+						font-family: $font-text;
+						padding-top: 7px;
+						padding-bottom: 7px;
+							&:hover {
+								opacity: 0.8;
+							}
+					}
+				}
+			}
+			p {
+				font-size: 14px;
+				color:$color-white;
+				font-family: $font-text;
+			}
+			input[type="text"] {
+				width: 100%;
+				border-radius:6px;
+				padding:10px;
+				border:none;
+				margin-top: 15px;
+				margin-bottom: 10px;
+				font-size: 12px;
+				font-family: Arial;
+				font-style: italic;
+			}
+			input[type="submit"] {
+				background:#8ac33e;
+				border:none;
+				border-radius:6px;
+				border-bottom:3px solid #79ab36;
+				color:$color-white;
+				padding-right: 25px;
+				padding-left: 25px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				margin-top: 10px;
+				font-weight: bold;
+				text-shadow: 1px 1px 1px #587c29;
+				font-family: $font-primary;
+					&:hover {
+						opacity: 0.8;
+					}
+			}
+		}
+		.social-box {
+			img {
+				margin-right: 5px;
+				@include breakpoint(tablet-port) {
+					width: 24px;
+				}
+			}
+			a {
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+}
+
+/*=====  End of Footer  ======*/
+
+/*================================
+=            Copy bar            =
+================================*/
+
+#copy-bar {
+	background:$color-gray-dark;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	@include breakpoint(phone) {
+		text-align: center;
+	}
+		small {
+			font-size: 14px;
+			color:$color-white;
+			font-family: $font-text;
+			padding-top: 5px;
+			display: block;
+		}
+		#footer-logos {
+			text-align: right;
+			@include breakpoint(phone) {
+				text-align: center;
+				padding-top: 10px;
+			}
+		}
+}
+
+/*=====  End of Copy bar  ======*/
+
+/*==================================
+=            Bottom CTA            =
+==================================*/
+
+#bottom-cta {
+	min-height:405px;
+	background:url(/img/bg/bottom-cta-bg.jpg) no-repeat center top;
+	background-size:cover;
+		header {
+			text-align: center;
+			color:$color-white;
+			margin-top: 130px;
+			padding-bottom: 60px;
+				h5 {
+					color:$color-white;
+					font-size: 36px;
+					font-weight: bold;
+					font-family: $font-primary;
+				}
+		}
+}
+
+/*=====  End of Bottom CTA  ======*/

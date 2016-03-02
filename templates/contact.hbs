@@ -1,0 +1,87 @@
+{{#extend "main" page="contact"}}
+
+  {{#content "body"}}
+    {{> topbar }}
+
+    {{> menubar }}
+
+<div class="container-fluid" id="contact-block">
+        <div class="container">
+          <div class="row">
+            <header>
+              <h1>contact us</h1>
+              <h2>we’d love to hear from you</h2>
+            </header>
+
+            <div class="col-md-6 col-sm-6">
+              <label for="">Name</label>
+              <input type="text">
+              <label for="">Email</label>
+              <input type="text">
+              <label for="">Phone number</label>
+              <input type="text">
+              <label for="">Subject</label>
+              <input type="text">
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <label for="">Message</label>
+              <textarea name="" id="" ></textarea>
+            </div>
+
+            <div class="col-md-12" id="submit-block">
+              <input type="submit" value="SEND">
+            </div>
+
+
+
+
+
+          </div>
+          <!-- // row  -->
+        </div>
+        <!-- // container  -->
+      </div>
+      <!-- // top bar  -->
+
+        <div class="container-fluid" id="contact-info-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6">
+                <img src="/img/logos/footer-logo-small.png" alt="" class="img-responsive cta-logo">
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6">
+                <h6>Optimal Bits Sweden AB</h6>
+                <address>
+                  Ideon Science Park. <br>
+Scheelevägen 15, <br>
+SE-22370 Lund <br>
+Sweden
+                </address>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6">
+                <h6>Support</h6>
+                <p><img src="/img/ico/phone.png" alt="">+46 (0) 733 329536</p>
+                <p><img src="/img/ico/mail.png" alt=""><a href="mailto:support@adleria.com">support@adleria.com</a></p>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6">
+                <h6>Sales</h6>
+                <p><img src="/img/ico/phone.png" alt="">+46 (0) 733 329536 </p>
+                <p><img src="/img/ico/mail.png" alt=""><a href="mailto:sales@adleria.com">sales@adleria.com</a></p>
+              </div>
+            </div>
+            <!-- // row  -->
+          </div>
+          <!-- // container  -->
+        </div>
+        <!-- // contact block  -->
+
+        <div id="map-block">
+          <img src="/img/bg/map.jpg" alt="" class="img-responsive">
+        </div>
+
+    {{> footer }}
+
+    {{> copybar }}
+  {{/content}}
+
+{{/extend}}
