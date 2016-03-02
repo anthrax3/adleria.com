@@ -1,0 +1,14 @@
+adleria:
+  build: .
+  hostname: adleria.com
+  expose:
+    - "8080"
+  restart: always
+
+  environment:
+    - NODE_ENV=production
+
+  command: node /adleria.com/server.js
+
+  external_links:
+    - proxy-adleria:apps_proxy_1
