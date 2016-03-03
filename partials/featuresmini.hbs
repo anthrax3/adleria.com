@@ -1,0 +1,26 @@
+<div class="container-fluid" id="featured-area">
+  <div class="container">
+    <div class="row">
+      <header>
+        <h3>amazing features</h3>
+        <h4>Proin iaculis purus consequat sem cure. </h4>
+      </header>
+    </div>
+    <!-- // row  -->
+    <div class="row">
+
+      {{#each features}}
+        {{> featurebox this}}
+      {{/each}}
+      <!-- // col md 4  -->
+
+    </div>
+    <!-- // row  -->
+    <div class="row">
+      <footer>
+        <a href="/features" class="all-features-btn">see all features</a>
+      </footer>
+    </div>
+  </div>
+  <!-- // container  -->
+</div>

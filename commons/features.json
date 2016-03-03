@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Aggregation",
+    "text": "Adleria aggregates screens from different networks and present them uniformly.",
+    "icon": "/img/ico/feat1.png"
+  },
+  {
+    "title": "Classification",
+    "text": "In order to find the more suitable screens for your campaign,adleria classifies its screens with tags.",
+    "icon": "/img/ico/feat2.png"
+  },
+  {
+    "title": "Rating",
+    "text": "Adleria performs an independent rating of every ad space. Thisrating is based on factors.",
+    "icon": "/img/ico/feat3.png"
+  },
+  {
+    "title": "Approval",
+    "text": "Every ad needs to be approved before it can be displayed on agiven ad-space.",
+    "icon": "/img/ico/feat4.png"
+  },
+  {
+    "title": "Streamlined operation",
+    "text": "The advertisement process has been streamlined so that you can run your campaigns in a matter of a few clicks.",
+    "icon": "/img/ico/feat5.png"
+  },
+  {
+    "title": "Powerful",
+    "text": "Adleria performs an independent rating of every ad space. Thisrating is based on factors.",
+    "icon": "/img/ico/feat6.png"
+  }
+]

@@ -1,0 +1,21 @@
+<div class="container-fluid" id="test-block">
+  <div class="container">
+    <div class="row">
+      <header>
+        <h4>{{title}}</h4>
+        <h5>{{subtitle}}</h5>
+      </header>
+    </div>
+    <div class="row">
+
+    <div class="owl-carousel" id="test-slider">
+
+      {{#each items}}
+        {{> testimonial this }}
+      {{/each}}
+
+    </div>
+
+    </div>
+  </div>
+</div>

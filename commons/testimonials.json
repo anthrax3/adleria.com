@@ -1,0 +1,27 @@
+{
+  "title": "what our customers says",
+  "subtitle": "Proin iaculis purus consequat sem cure.",
+  "items": [
+    {
+      "text": "lorem ipsum asd asd",
+      "name": "John Doe",
+      "company": "Acme Inc.",
+      "title": "CEO",
+      "img": "/img/misc/test.jpg"
+    },
+    {
+      "text": "lorem ipsum asd asd",
+      "name": "John Doe",
+      "company": "Acme Inc.",
+      "title": "CEO",
+      "img": "/img/misc/test.jpg"
+    },
+    {
+      "text": "lorem ipsum asd asd",
+      "name": "John Doe",
+      "company": "Acme Inc.",
+      "title": "CEO",
+      "img": "/img/misc/test.jpg"
+    }
+  ]
+}

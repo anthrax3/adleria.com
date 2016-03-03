@@ -171,7 +171,7 @@
 						font-size: 12px;
 					}
 					&:hover {
-						border-bottom:3px solid $color-green;
+						color: $color-green;
 						@include breakpoint(phone) {
 							border-bottom:1px solid lighten($color-gray, 10%);
 						}
