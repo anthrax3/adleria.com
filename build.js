@@ -9,6 +9,12 @@ var handlebars = require('handlebars'),
 
 handlebars.registerHelper(layouts(handlebars));
 
+handlebars.registerHelper('active', function(page, name){
+  if(page === name){
+    return 'class="active"'
+  }
+})
+
 //
 // Register handlebars template engine.
 //

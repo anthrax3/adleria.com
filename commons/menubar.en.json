@@ -1,30 +1,37 @@
 {
   "options": [
     {
+      "name": "home",
       "title": "Home",
       "url": "/"
     },
     {
+      "name": "about",
       "title": "About",
       "url": "/about"
     },
     {
+      "name": "features",
       "title": "Features",
       "url": "/features"
     },
     {
+      "name": "pricing",
       "title": "Pricing",
       "url": "/pricing"
     },
     {
+      "name": "faq",
       "title": "FAQ",
       "url": "/faq"
     },
     {
+      "name": "news",
       "title": "News",
       "url": "/news"
     },
     {
+      "name": "contact",
       "title": "Contact",
       "url": "/contact"
     }

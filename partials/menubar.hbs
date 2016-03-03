@@ -28,7 +28,11 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             {{#each menubar.options}}
-              <li><a href="{{this.url}}">{{this.title}}</a></li>
+              <li>
+                <a {{{active ../$page this.name}}}
+                  href="{{this.url}}">{{this.title}}
+                </a>
+              </li>
             {{/each}}
           </ul>
         </div>

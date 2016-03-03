@@ -93,33 +93,33 @@
 	@include breakpoint(phone) {
 		text-align: center;
 	}
-		.dropdown {
-			display: inline-block;
-			color:$color-white;
-				a {
-					color:$color-white;
-				}
-		}
+  .dropdown {
+    display: inline-block;
+    color:$color-white;
+      a {
+        color:$color-white;
+      }
+  }
 
-				.dropdown-menu {
-					color:$color-gray;
-					background:$color-gray;
-					min-width: auto!important;
-					margin-left: 0px !important;
-					@include breakpoint(laptop) {
-						left:-50px;
-					}
-						a {
-							color:$color-gray;
-							background:$color-gray;
-								&:hover {
-									opacity: 0.8;
-									background:$color-gray-dark!important;
-								}
-						}
-						img {
-						}
-				}
+  .dropdown-menu {
+    color:$color-gray;
+    background:$color-gray;
+    min-width: auto!important;
+    margin-left: 0px !important;
+    @include breakpoint(laptop) {
+      left:-50px;
+    }
+      a {
+        color:$color-gray;
+        background:$color-gray;
+          &:hover {
+            opacity: 0.8;
+            background:$color-gray-dark!important;
+          }
+      }
+      img {
+      }
+  }
 
 
 		.login-btn-mobile {
@@ -171,6 +171,13 @@
 						font-size: 12px;
 					}
 					&:hover {
+						border-bottom:3px solid $color-green;
+						@include breakpoint(phone) {
+							border-bottom:1px solid lighten($color-gray, 10%);
+						}
+					}
+
+          &.active{
 						border-bottom:3px solid $color-green;
 						@include breakpoint(phone) {
 							border-bottom:1px solid lighten($color-gray, 10%);
