@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Aggregation",
+    "text": "Adleria aggregates screens from different networks and present them uniformly. When creating campaigns all screens appear homogenous, and as advertisers you just need to concentrate on where and when your advertisement should be displayed.",
+    "icon": "/img/ico/features1.png"
+  },
+  {
+    "title": "Classification",
+    "text": "In order to find the more suitable screens for your campaign, adleria classifies its screens with tags. The tags describe the target groups relevant for the venue where the screen is located. This increases the conversion rate for your ads.",
+    "icon": "/img/ico/features2.png"
+  },
+  {
+    "title": "Rating",
+    "text": "Adleria performs an independent rating of every ad space. This rating is based on factors such as screen size, location value, amount of daily visitors and many others. The rating is produced in a way that we believe will make you confident when selecting ad spaces and get as much results for the bucks as possible.",
+    "icon": "/img/ico/features3.png"
+  },
+  {
+    "title": "Approval",
+    "text": "Every ad needs to be approved before it can be displayed on a given ad-space. This approval process is quick, and works by sending a notification mail to the manager responsible for the ad-space. As soon as the content is approved, the ads will start streaming according to your schedule settings in your campaign.",
+    "icon": "/img/ico/features4.png"
+  }
+]

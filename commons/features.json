@@ -6,17 +6,17 @@
   },
   {
     "title": "Classification",
-    "text": "In order to find the more suitable screens for your campaign,adleria classifies its screens with tags.",
+    "text": "Adleria classifies its screens with tags so that you can find the more suitable screens for your campaign.",
     "icon": "/img/ico/feat2.png"
   },
   {
     "title": "Rating",
-    "text": "Adleria performs an independent rating of every ad space. Thisrating is based on factors.",
+    "text": "Adleria performs an independent rating of every ad space, based on many relevant factors.",
     "icon": "/img/ico/feat3.png"
   },
   {
     "title": "Approval",
-    "text": "Every ad needs to be approved before it can be displayed on agiven ad-space.",
+    "text": "Super fast approval so that your campaigns can start almost immediately.",
     "icon": "/img/ico/feat4.png"
   },
   {
@@ -25,8 +25,8 @@
     "icon": "/img/ico/feat5.png"
   },
   {
-    "title": "Powerful",
-    "text": "Adleria performs an independent rating of every ad space. Thisrating is based on factors.",
+    "title": "Powerful UI",
+    "text": "You are in full control of your ads. Change the content, pause, add more screens, all at your fingertips.",
     "icon": "/img/ico/feat6.png"
   }
 ]

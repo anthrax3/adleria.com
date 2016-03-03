@@ -19,7 +19,7 @@
 @import "sections/footer";
 @import "sections/sidebar";
 @import "sections/content";
-
+@import "sections/testimonials";
 
 /*===================================
 =            About Block            =
@@ -210,104 +210,6 @@
 
 /*=====  End of About Block  ======*/
 
-/*==========================================
-=            Testimonials Block            =
-==========================================*/
-
-#test-block {
-	header {
-			text-align: center;
-			padding-bottom: 60px;
-				h4 {
-					@include section-heading();
-				}
-				h5 {
-					@include small-heading();
-				}
-	}
-
-
-	.owl-theme .owl-dots .owl-dot span {
-		background:$color-gray;
-	}
-	.owl-controls {
-		position:relative;
-		z-index: 999;
-		@include breakpoint(desktop) {
-			display: none;
-		}
-		@include breakpoint(laptop) {
-			display: none;
-		}
-			.active span {
-				background:$color-green!important;
-			}
-	}
-
-
-		padding-top: 60px;
-		padding-bottom: 50px;
-		.test-box {
-			border:1px solid #efefef;
-			border-radius:6px;
-			padding-top: 35px;
-			padding-bottom: 35px;
-			padding-right: 20px;
-			padding-left: 80px;
-			img {
-				width: auto!important;
-			}
-			background:url(../img/bg/quote.png) no-repeat 20px 35px;
-			@include breakpoint(phone) {
-			}
-			@include breakpoint(tablet-port) {
-				padding:15px;
-				background:none;
-			}
-			p {
-				font-size: 14px;
-				font-family: $font-text;
-				color:$color-text-light;
-				line-height: 24px;
-			}
-		}
-		footer {
-			padding-top: 40px;
-			background:url(../img/bg/bottom-quote.jpg) no-repeat 20px 0px;
-			margin-top: -2px;
-			margin-left: 25px;
-			@include breakpoint(phone) {
-				margin-bottom: 30px;
-			}
-				img {
-					border-radius:180px;
-					border:5px solid #f1f1f1;
-					margin-right: 10px;
-					float:left;
-				}
-				small {
-					font-size: 14px;
-					font-weight: bold;
-					font-family: $font-text;
-					margin-bottom: 2px;
-					display: inline-block;
-					padding-top: 10px;
-				}
-				h6 {
-					font-size: 14px;
-					font-family: $font-text;
-					color:$color-green;
-				}
-		}
-}
-
-#test-slider {
-	img {
-		width: auto!important;
-	}
-}
-
-/*=====  End of Testimonials Block  ======*/
 
 /*==================================
 =            News Block            =
@@ -389,7 +291,7 @@ body{overflow-x:hidden;}
 }
 
 #about-image img {
-  height: 438px;
+  height: 320px;
   width:100%;
   object-fit:cover;
 }

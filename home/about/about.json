@@ -1,12 +1,17 @@
 {
+  "headline": {
+    "title": "A fresh solution for advertisement",
+    "text": "Adleria provides the easiest and most cost efficient solution to display ads on digital signage screens. From a powerful search function to a complete campaign system, you are in full control on when and where your ads are displayed. Invoicing and payment is automated so that administration costs are kept to a minimum.",
+    "img": "/img/misc/video.jpg"
+  },
   "first": {
     "title": "All-in-one advertising solution",
-    "text": "Adleria is a new web solution for advertising on indoors andoutdoors digital screens, the so called digital signage screens. Adleria aggregates, classifies and rates all the screens on an area and allowsyou to create campaigns on them. It is easy to find the relevant screensthat are where your target group is. You can also filter by rating, onlydisplaying ads on those screens that meets the standards that yourpublicity requires.",
+    "text": "We provide you with the tools and the highest level of service so that you can create efficient campaigns that have large impact for your business: select large areas, or smaller ones, pick your target groups, create campaigns that can be changed at any time at no extra cost. Configure exactly when they shall be played. ",
     "img": "/img/misc/about1.jpg"
   },
   "second": {
     "title": "Running campaigns with a single click",
-    "text": "Adleriasas is a new web solution for advertising on indoors andoutdoors digital screens, the so called digital signage screens. Adleriaaggregates, classifies and rates all the screens on an area and allowsyou to create campaigns on them. It is easy to find the relevant screensthat are where your target group is. You can also filter by rating, onlydisplaying ads on those screens that meets the standards that yourpublicity requires.",
+    "text": "Adleria is designed with a refined interface so that anybody can create campaigns. From the large media broker used to manage dozens of campaigns daily, to the small business, with only a few campaings a year.",
     "img": "/img/misc/about2.jpg"
   }
 }
