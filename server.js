@@ -6,12 +6,13 @@ var path = require('path');
 //
 var file = new staticServer.Server(path.join(__dirname, 'build', 'home'));
 
-require('http').createServer(function (request, response) {
-    request.addListener('end', function () {
+require('http').createServer(function (req, res) {
+    req.addListener('end', function () {
         //
         // Serve files!
         //
-        file.serve(request, response);
+        console.log(req.url);
+        file.serve(req, res);
     }).resume();
 }).listen(8080);
 
